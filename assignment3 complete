@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="H.ASS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="container">   
+    <form> 
+<h1>Responsive Registration <br>Form</h1>
+<i class="fa fa-envelope" aria-hidden="true"></i>
+    <input style="margin:10px; padding:5px;"type="email" name="email" size="50" rows="3" placeholder="Email"><br>
+<i class="fa fa-unlock-alt" aria-hidden="true"></i> 
+    <input style="margin:10px;  padding:5px;"type="password" placeholder="Password" size="50"  name="password"/><br> 
+<i class="fa fa-unlock-alt" aria-hidden="true"></i> 
+    <input style="margin:10px;  padding:5px;"type="password" placeholder="Re-Type Password" size="50"  name="password"/> <br>
+<i id="firstname" class="fa fa-address-book" aria-hidden="true"></i>
+    <input style="margin:10px;  padding:5px;"id="firstname" type="text" placeholder="Name" size="15"  name="firstname"/>
+<i class="fa fa-address-book" aria-hidden="true"></i>
+    <input style="margin:10px;  padding:5px;"type="text" placeholder="Last Name" size="15"  name="lastname"/><br><BR>
+   <div class="mafe"> <input  type="radio" name="name"/>Male
+    <input  type="radio" name="name"/>Female<br><br></div>
+   
+    <select placeholder="Choose a country" name="cars" id="cars">
+        <option name="cars" value="cars">Honda</option>
+        <option name="cars" value="cars">Suzuki</option> 
+        <option name="cars" value="cars">Audi</option>
+
+
+    </select><br><br>
+
+    <div class="checks">
+        <input type="radio" name="check">i agree with terms and conditions<br>
+        <input type="radio" name="check">i don't agree with terms and conditions<br><br>
+    </div> 
+    <button class="btn">Register</button><br><br>
+
+    </form>
+</div>
+
+
+
+
+</body>
+</html>
+
+CSS
+
+.container{
+    background-color: rgb(243, 248, 248);
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin:-100px ;
+    text-align: center;
+    padding:10px;
+    border-radius: 5px;
+}
+
+#firstname{
+   float: left;
+}
+
+
+
+#cars{
+    width:92%;
+    padding:5px;
+    float: initial;
+}
+
+.mafe{
+    float: left;
+}
+.checks{
+    float: left;
+    
+   
+}
+.btn{
+    padding:10px;
+    width:100%;
+    background-color: orange;
+    color: white;
+    border: 0ch;
+}
+
+.btn:hover{
+    cursor:pointer;
+}
+
+
+
